@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/notflix-logo-telegram-128x72.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>on-boarding</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=aB4gy8"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=aB4gy8" type="text/css">
+
+  
+  <style>.modal-content {
+  background-color: #232323 !important;
+color: #ffa600;
+}
+
+</style>
+
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="cid-uHToHEMIj3 mbr-fullscreen mbr-parallax-background" id="success">
+ 
+    
+ 
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container">
+        <div class="media-container-row d-flex align-items-center">
+            <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>User Created!</strong></h1>
+                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">To get started, you can jump straight to the Web platform, or explore further and download desktop clients, iOS and Android Apps&nbsp;<br><br>Enter&nbsp;<strong><a href="https://notflix.pknw1.co.uk" class="text-primary" target="_blank">https://notflix.pknw1.co.uk</a></strong> if asked for server!<br></p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="onboarding.html#mobile-apps">Guide</a> <a class="btn btn-md btn-primary display-4" href="https://help.pknw1.co.uk/help/html">Help</a> <a class="btn btn-md btn-danger-outline display-4" href="https://notflix.pknw1.co.uk" target="_blank">Login</a></div>
+            </div>
+            <div class="col-8 col-lg-5 mx-auto py-5">
+                <a href="https://jellyfin.pknw1.co.uk" target="_blank"><img src="assets/images/notflix-jellyfin-1256x573.png" class="img-fluid" alt="" title=""></a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-35" data-rv-view="326">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal " id="congrats" tabindex="-1" role="dialog" aria-labelledby="congratsLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="congrats_body">
+<h1>Congratulations</h1>
+<br>
+Your user account has been created and you can now login to watch and add movies
+<br>&nbsp;
+<p>
+Click <strong>Proceed</strong> to see the setup guide, or press <strong>Skip</strong> to open the Web Player!</p>
+<br>
+<p>Enter <strong>https://jf.pknw1.co.uk</strong> if asked for a server</p></div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">Proceed</a></div><div class="mbr-section-btn"><a href="https://jf.pknw1.co.uk" class="no-anim btn btn-primary display-4" target="_new">Skip</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#congrats").on("hidden.bs.modal", function () { 
+      var html = $( "#congrats_body" ).html(); 
+      $( "#congrats_body" ).empty(); 
+      $( "#congrats_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#congrats") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section data-bs-version="5.1" class="header3 cid-Nkzl6tqCwg mbr-fullscreen mbr-parallax-background" id="mobile-apps">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);">
+    </div>
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-figure" style="width: 60%;">
+                <img src="assets/images/mobirise-mobiles-4-482x757.png" alt="">
+            </div>
+
+            <div class="media-content">
+                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1"><strong>Apps</strong></h1>
+                <h3 class="mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style display-4">Jellyfin has some great and completely free apps for iOS and Android - if you download any of the apps listed they should ask for your server and then login details<br><br><div>Never pay or put personal details into the app - all your accounts should different passwords&nbsp;</div></h3>
+                <div class="mbr-section-text mbr-white pb-3 ">
+                    <p class="mbr-text mbr-fonts-style display-5">your server is <a href="https://notflix.pknw1.co.uk" class="text-primary"><strong>https://notflix.pknw1.co.uk</strong></a></p>
+                </div>
+                <div>
+                  <a href="https://jellyfin.org/downloads/clients/?platform=Android" class="appstore android-btn"><img src="assets/images/bjllgl5iba8y-3307632019-400x62.png" alt=""></a><a>
+                  </a><a href="https://jellyfin.org/downloads/clients/?platform=Android%2CiOS" class="appstore ios-btn"><img src="assets/images/bjllgl5iba8y-3307632018-400x62.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbr-iconfont mbrib-down" style="color: rgb(255, 0, 0); fill: rgb(255, 0, 0);" media-simple="true"></i>
+        </a>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="cid-uIam1vieax mbr-fullscreen mbr-parallax-background" id="design-block-3b">
+ 
+    
+ 
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container">
+        <div class="media-container-row d-flex align-items-center">
+            <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>Firestick</strong></h1>
+                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4"></p><p><strong>How To Install Jellyfin</strong><br><strong>Method #1: Enable unknown sources<br></strong><br><strong>Step 1. </strong>Open your Firestick device and, using the remote, scroll to the settings section and click “MY Fire TV.”<br><strong>Step 2. </strong>Navigate to the “developer tab” click “apps from unknown sources.”<br><strong>Step 3.</strong> The Firestick device will request you to confirm the action.<br><br>Press the “turn on” button to continue.<br><br><br>The process is complete, and you can enjoy the streaming services - start the App and use server <a href="https://notflix.pknw1.co.uk" class="text-primary"><strong>https://notflix.pknw1.co.uk</strong></a></p><p></p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-danger-outline display-4" href="https://letmegooglethat.com/?q=how+to+install+Jellyfin+on+Firestick" target="_blank">Or find more help</a></div>
+            </div>
+            <div class="col-8 col-lg-5 mx-auto py-5">
+                <img src="assets/images/amazon-fire-tv-stick-2044516823-1000x600.jpg" class="img-fluid" alt="" title="">
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <span class="fa-chevron-down fa mbrib-down" style="color: rgb(255, 0, 0); fill: rgb(255, 0, 0);"></span>
+        </a>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="cid-WHUakQ2nVZ mbr-fullscreen mbr-parallax-background" id="requests">
+ 
+    
+ 
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container">
+        <div class="media-container-row d-flex align-items-center">
+            <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>Take Control!</strong></h1>
+                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">It's up to you and other users to Request new movies and shows so that they get auto-added!</p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-danger-outline display-4" href="https://requests.pknw1.co.uk" target="_blank">Add some movies</a></div>
+            </div>
+            <div class="col-8 col-lg-5 mx-auto py-5">
+                <img src="assets/images/ezgif-2cb022df995c2e.gif" class="img-fluid" alt="" title="">
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <span class="fa-chevron-down fa mbrib-down" style="color: rgb(255, 0, 0); fill: rgb(255, 0, 0);"></span>
+        </a>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="cid-uIXamtxD4O mbr-fullscreen mbr-parallax-background" id="design-block-47">
+ 
+    
+ 
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container">
+        <div class="media-container-row d-flex align-items-center">
+            <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>Access More</strong></h1>
+                <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">Open the Jellyfin menu to access requests and see other apps that are available now - more will be added so check back<br><br>You're all set!</p>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-danger-outline display-4" href="https://jf.pknw1.co.uk" target="_blank">Launch Web</a> <a class="btn btn-md btn-danger-outline display-4" href="https://requests.pknw1.co.uk" target="_blank">Get Apps</a></div>
+            </div>
+            <div class="col-8 col-lg-5 mx-auto py-5">
+                <img src="assets/images/menu.gif" class="img-fluid" alt="" title="">
+            </div>
+        </div>
+    </div>
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="https://jf.pknw1.co.uk">
+            <span class="fa-chevron-down fa mbrib-success" style="color: rgb(255, 0, 0); fill: rgb(255, 0, 0);"></span>
+        </a>
+    </div>
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+<script type="text/javascript">
+  const publishURL = `https://ntfy.sh/pknw1`;
+  const subscribeURL = `https://ntfy.sh/pknw1/sse`;
+  const events = document.getElementById('events');
+  const eventSource = new EventSource(subscribeURL);
+
+  // Publish button
+  document.getElementById("publishButton").onclick = () => {
+var inputText = document.getElementById("inputText").value;
+      var inputNumber = document.getElementById("inputNumber").value;
+      var inputMessage = document.getElementById("inputMessage").value;
+
+      fetch(publishURL, {
+          method: 'POST', // works with PUT as well, though that sends an OPTIONS request too!
+          body:`${new Date().toString()} `+inputText+` - `+inputNumber+` - `+inputMessage
+      })
+      document.getElementById("publishButton").innerHTML = "Message Sent!";
+  };
+
+</script>
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>

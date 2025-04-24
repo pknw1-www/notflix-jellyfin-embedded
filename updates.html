@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/notflix-logo-telegram-128x72.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Updates</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=0vTzkc"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=0vTzkc" type="text/css">
+
+  
+  <style>.modal-content {
+  background-color: #232323 !important;
+color: #ffa600;
+}
+
+</style>
+
+  <style>
+body {
+background-color: #232323
+}
+
+.modal-body {
+background-color: #232323;
+color: red;
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="news09 startm5 cid-uJ8KtWVcNU" id="news09-4f">
+  
+  <div class="container">
+    <div class="col-12 mb-5 content-head">
+      <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong><br></strong><br><strong>Updates</strong></h3>
+      
+    </div>
+    <div class="row justify-content-center ">
+      <div class="col-12 col-lg-12">
+        <div class="item features-without-image col-12 active">
+          <div class="item-wrapper">
+            <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5"><strong>Maintenance&nbsp;24th April 14:00 - 16:00</strong></h5>
+            <div class="details">
+              <div class="details-item display-7">
+                <span class="mbr-iconfont mobi-mbri-calendar mobi-mbri details-icon"></span>
+                <p class="mbr-tag mbr-fonts-style display-7">Thursday 24th April&nbsp;<br></p>
+              </div>
+              
+            </div>
+            
+            
+            <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">The Movie Database requires re-indexing to improve performance so streaming will be unavailable from 2pm for a maximum of 2 hours; in reality it should take around 30 mins</h6>
+            
+          </div>
+        </div><div class="item features-without-image col-12">
+          <div class="item-wrapper">
+            <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5"><strong>Updates Here</strong></h5>
+            <div class="details">
+              <div class="details-item display-7">
+                <span class="mbr-iconfont mobi-mbri-calendar mobi-mbri details-icon"></span>
+                <p class="mbr-tag mbr-fonts-style display-7">N/A<br></p>
+              </div>
+              
+            </div>
+            
+            
+            <h6 class="mbr-card-subtitle mbr-fonts-style mt-0 mb-3 display-7">Check this page for any important news or updates - if you are experiencing any issues, check <a href="https://status.pknw1.co.uk" class="text-primary" target="_blank">https://status.pknw1.co.uk</a> to make sure all services are available; if you require further assistance, either use the <a href="contact.html" class="text-primary">Contact</a> page or message in the <a href="https://whatsapp.com/channel/0029VavN9MNHVvTUPkXfMP1Q" class="text-primary" target="_blank">WhatsApp Channel</a></h6>
+            
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+<script type="text/javascript">
+  const publishURL = `https://ntfy.sh/pknw1`;
+  const subscribeURL = `https://ntfy.sh/pknw1/sse`;
+  const events = document.getElementById('events');
+  const eventSource = new EventSource(subscribeURL);
+
+  // Publish button
+  document.getElementById("publishButton").onclick = () => {
+var inputText = document.getElementById("inputText").value;
+      var inputNumber = document.getElementById("inputNumber").value;
+      var inputMessage = document.getElementById("inputMessage").value;
+
+      fetch(publishURL, {
+          method: 'POST', // works with PUT as well, though that sends an OPTIONS request too!
+          body:`${new Date().toString()} `+inputText+` - `+inputNumber+` - `+inputMessage
+      })
+      document.getElementById("publishButton").innerHTML = "Message Sent!";
+  };
+
+</script>
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>

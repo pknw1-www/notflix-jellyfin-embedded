@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=uer2SM"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=uer2SM" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=Ey9n5a"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=Ey9n5a" type="text/css">
 
   
   <style>.modal-content {
@@ -38,6 +38,9 @@ background-color: #232323
 .modal-body {
 background-color: #232323;
 color: red;
+}
+.modal-lg, .modal-xl {
+    max-width: 1600px;
 }
 </style>
 </head>
@@ -60,7 +63,7 @@ color: red;
 
     <div class="row justify-content-center">
       <div class="col-12 col-md-7">
-        <a href="https://notflix.pknw1.co.uk" target="_blank"><img src="assets/images/screenshot-2025-04-20-at-23.29.46-822x1601.png" alt="" title=""></a>
+        <a href="javascript:OpenModal('PopupWelcome')"><img src="assets/images/streaming-services-text-822x1601.png" alt="Click to preview available media" title=""></a>
       </div>
     </div>
   </div>
@@ -81,13 +84,7 @@ color: red;
 
 	
 	
-	<div><div class="modal fade" id="PopupWelcome" tabindex="-1" role="dialog" aria-labelledby="PopupWelcomeLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="PopupWelcome_body"><img src="https://www.pknw1.co.uk/assets/images/logo-stacked-511x282.png" width="50%"><br>
-go to the<a href="https://jellyfin.pknw1.co.uk"> Streaming Web App</a>  or <a href="https://requests.pknw1.co.uk">requests</a><br>
-
-<br>
-currently 1865 movies &amp; 4623 TV Episodes
-<br><p>
-</p><div class="mbr-section-btn"><a class="btn btn-primary display-7" href="invite.html">Get Started&nbsp; &nbsp; &gt;&nbsp;&nbsp;</a></div></div>    </div>  </div></div><script> 
+	<div><div class="modal fade" id="PopupWelcome" tabindex="-1" role="dialog" aria-labelledby="PopupWelcomeLabel" aria-hidden="true">  <div class="modal-dialog modal-lg modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-body display-7" id="PopupWelcome_body"><iframe src="https://hub.pknw1.co.uk" height="800px"></iframe></div>    </div>  </div></div><script> 
 document.addEventListener("DOMContentLoaded", function() { 
   if(typeof jQuery === "function") {
     $("#PopupWelcome").on("hidden.bs.modal", function () { 

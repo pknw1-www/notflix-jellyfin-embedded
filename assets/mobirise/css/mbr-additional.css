@@ -752,6 +752,8 @@ a {
   }
 }
 .cid-uHYVbjVf1A {
+  padding-top: 8rem;
+  padding-bottom: 0rem;
   background-image: url("../../../assets/images/bg-dimmed-2000x1125.png");
 }
 .cid-uHYVbjVf1A .mbr-fallback-image.disabled {
@@ -773,7 +775,7 @@ a {
   .cid-uHYVbjVf1A .image-wrap img {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 20%;
   }
 }
 .cid-uHYVbjVf1A .row-links {
@@ -804,6 +806,81 @@ a {
 .cid-uHYVbjVf1A .mbr-text,
 .cid-uHYVbjVf1A .mbr-section-btn {
   color: #ff0000;
+}
+.cid-uN4NOsrjH3 {
+  padding-top: 9rem;
+  padding-bottom: 10rem;
+  background-image: url("../../../assets/images/jellyfin-bg-2-2000x1125.png");
+}
+.cid-uN4NOsrjH3 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uN4NOsrjH3 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uN4NOsrjH3 .nav-tabs .nav-item.open .nav-link:focus,
+.cid-uN4NOsrjH3 .nav-tabs .nav-link.active:focus {
+  outline: none;
+}
+.cid-uN4NOsrjH3 .nav-tabs {
+  flex-wrap: wrap;
+  border-bottom: none;
+}
+@media (max-width: 767px) {
+  .cid-uN4NOsrjH3 .nav-item {
+    width: 100%;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+}
+.cid-uN4NOsrjH3 .nav-tabs .nav-item {
+  margin-right: 1.5rem;
+}
+.cid-uN4NOsrjH3 .nav-tabs .nav-link {
+  transition: padding 0.3s ease, background-color 0.3s ease;
+  border: none;
+  border-radius: 2rem !important;
+  padding: 1.25rem 0!important;
+  background-color: transparent!important;
+  overflow: hidden!important;
+}
+.cid-uN4NOsrjH3 .nav-tabs .nav-link:not(.active) {
+  color: #ff0000;
+}
+.cid-uN4NOsrjH3 .nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: #ff0000 !important;
+  padding: 1.25rem 2rem!important;
+}
+.cid-uN4NOsrjH3 .mbr-section-title {
+  text-align: center;
+  color: #ffffff;
+}
+.cid-uN4NOsrjH3 .mbr-section-subtitle {
+  text-align: center;
+  color: #ffffff;
+}
+.cid-uN4NOsrjH3 .mbr-text {
+  color: #fff;
+  margin: 0;
+}
+.cid-uN4NOsrjH3 .content-head {
+  max-width: 800px;
+}
+.cid-uN4NOsrjH3 .item-wrapper {
+  background-color: #232323;
+  padding: 2.25rem;
+}
+@media (max-width: 767px) {
+  .cid-uN4NOsrjH3 .item-wrapper {
+    padding: 2rem 1.5rem;
+  }
 }
 .cid-uH5q6oN9Mg {
   padding-top: 6rem;

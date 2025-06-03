@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "notflix-embedded",
-    "currentPage": "help.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "startm5",
       "title": "StartM5",
@@ -47,7 +47,7 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 160,
+    "uniqCompNum": 161,
     "versionPublish": "5.9.25",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -144,13 +144,105 @@
           },
           "_name": "header13",
           "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"12\" step=\"1\" value=\"7\" condition=\"showImage\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/bg-dimmed-2000x1125.png\" parallax selected>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\">\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText || showButtons\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><br><b><br></b><br><b>All movies &amp; tv under one account. Free.</b><br></h1>\n        <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">A custom streaming and web content portal with no ad's, no tracking, no logging and no cost<br><b>Stop giving these billionaires more money!!!!</b></p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://invite.pknw1.co.uk\" data-app-placeholder=\"Type Text\">Get Started &gt;</a> <a class=\"btn btn-danger-outline\" href=\"qr.html#design-block-3k\" data-app-placeholder=\"Type Text\">Share</a> <a class=\"btn btn-danger-outline\" href=\"onboarding.html\" data-app-placeholder=\"Type Text\">Quick-Start</a></div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}}\" mbr-if=\"showImage\">\n        <a href=\"javascript:OpenModal('PopupWelcome')\"><img src=\"@PROJECT_PATH@/assets/images/streaming-services-text-822x1601.png\" alt=\"Click to preview available media\" title></a>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header13\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" name=\"imageWidth\" title=\"Image Width\" min=\"1\" max=\"12\" step=\"1\" value=\"2\" condition=\"showImage\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <input type=\"checkbox\" title=\"Image\" name=\"showImage\" checked>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/bg-dimmed-2000x1125.png\" parallax selected>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\">\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\" mbr-if=\"showTitle || showText || showButtons\">\n      <div class=\"col-md-12 mb-5 content-head\">\n        <h1 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><br><b>All movies &amp; tv under one account. Free.</b><br></h1>\n        <p class=\"mbr-text mbr-fonts-style mt-4\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Stop giving these billionaires more money!!!!</b></p>\n        <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn mt-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://invite.pknw1.co.uk\" data-app-placeholder=\"Type Text\">Get Started &gt;</a> <a class=\"btn btn-danger-outline\" href=\"qr.html#design-block-3k\" data-app-placeholder=\"Type Text\">Share</a> <a class=\"btn btn-danger-outline\" href=\"onboarding.html\" data-app-placeholder=\"Type Text\">Quick-Start</a></div>\n      </div>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <div class=\"col-12 col-md-{{imageWidth}}\" mbr-if=\"showImage\">\n        <img src=\"@PROJECT_PATH@/assets/images/notflix-logo-telegram-128x72.png\" alt title>\n      </div>\n    </div>\n  </div>\n</section>",
           "_cid": "uHYVbjVf1A",
           "_anchor": "header13-3a",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".nav-tabs .nav-item.open .nav-link:focus, .nav-tabs .nav-link.active:focus": {
+              "outline": "none"
+            },
+            ".nav-tabs": {
+              "flex-wrap": "wrap",
+              "border-bottom": "none"
+            },
+            ".nav-item": {
+              "@media (max-width: 767px)": {
+                "width": "100%",
+                "margin-right": "0 !important",
+                "text-align": "center"
+              }
+            },
+            ".nav-tabs .nav-item": {
+              "margin-right": "1.5rem"
+            },
+            ".nav-tabs .nav-link": {
+              "transition": "padding 0.3s ease, background-color 0.3s ease",
+              "border": "none",
+              "&:not(.active)": {
+                "color": "@activeColor"
+              },
+              "border-radius": "2rem !important",
+              "padding": "1.25rem 0!important",
+              "background-color": "transparent!important",
+              "overflow": "hidden!important"
+            },
+            ".nav-tabs .nav-link.active": {
+              "color": "@tabsColor !important",
+              "background-color": "@activeColor !important",
+              "padding": "1.25rem 2rem!important"
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#fff",
+              "margin": "0"
+            },
+            ".content-head": {
+              "max-width": "800px"
+            },
+            ".item-wrapper": {
+              "background-color": "@backgroundColor",
+              "padding": "2.25rem",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              }
+            }
+          },
+          "_name": "tabs1",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tabs content18\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"9\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"10\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"7\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Tabs</header>\n        <select title=\"Count\" name=\"bootstrapTabs\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <input type=\"color\" name=\"tabsColor\" title=\"Color\" value=\"#ffffff\">\n        <input type=\"color\" name=\"backgroundColor\" title=\"Background Color\" value=\"#232323\">\n        <input type=\"color\" name=\"activeColor\" title=\"Active Color\" value=\"#ff0000\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/jellyfin-bg-2-2000x1125.png\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#2e481a\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#191818\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center mb-5\" mbr-if=\"showTitle || showSubtitle\">\n            <div class=\"col-12 content-head\">\n                <h3 class=\"mbr-section-title mb-0 mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                    <b>Tabs</b></h3>\n                <h4 class=\"mbr-section-subtitle mb-0 mt-4 mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\">Tabs Subtitle</h4>\n            </div>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"item-wrapper\">\n                    <ul class=\"nav nav-tabs mb-4\" role=\"tablist\">\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item first mbr-fonts-style\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab0\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><strong>Apps</strong></a></li>\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 1\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab1\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><strong>Home</strong></a></li>\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab2\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><strong>Requests</strong></a></li>\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 3\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab3\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><p><strong>Account</strong></p></a></li>\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab4\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><strong>Contact</strong></a></li>\n                        <li mbr-buttons mbr-theme-style=\"display-7\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 5\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\"><a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tabs1-4g_tab5\" data-app-placeholder=\"Type Text\" aria-selected=\"true\"><strong>+YouTube</strong></a></li>\n                    </ul>\n                    <div class=\"tab-content\">\n                        <div id=\"tab1\" class=\"tab-pane in active\" role=\"tabpanel\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        You can access the Web interface from anywhere via <a href=\"https://notflix.pknw1.co.uk\" class=\"text-primary\" target=\"_blank\">https://notflix.pknw1.co.uk</a> or you can&nbsp;<br>- <a href=\"https://jellyfin.org/downloads\" class=\"text-primary\" target=\"_blank\">Download Android Apps</a><br><a href=\"https://jellyfin.org/downloads\" class=\"text-primary\" target=\"_blank\">- Download iOS Apps</a><br><a href=\"https://jellyfin.org/downloads\" class=\"text-primary\" target=\"_blank\">- Install SmartTV Apps from your App Stores</a><br><a href=\"https://jellyfin.org/downloads\" class=\"text-primary\" target=\"_blank\">- Install on Amazon FireStick</a><br><br>just search for \"Jellyfin\" and install - all the best apps are Free with no \"in-app purchase\" so be sure to download free ones&nbsp;<br><br>When you start Jellyfin, set your server as&nbsp;<a href=\"https://notflix.pknw1.co.uk\" class=\"text-primary\" target=\"_blank\">https://notflix.pknw1.co.uk</a></p>\n                                </div>\n                            </div>\n                        </div>\n                        <div id=\"tab2\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 1\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        Once logged in, you can customise your Home page via <a href=\"https://notflix.pknw1.co.uk/web/#/mypreferencesmenu.html\" class=\"text-primary\">Preferences</a> &gt; <a href=\"https://notflix.pknw1.co.uk/web/#/mypreferenceshome.html\" class=\"text-primary\">Home</a><br><br>- Movies includes latest releases and any user added movies<br>- Movies may download in lower quality if just released, updating as better releases are available<br>- Movie Workprints stores lower quality non-released edit's of Movies<br><a href=\"https://notflix.pknw1.co.uk\" class=\"text-primary\">- Self Service Search and Add is available for Movies</a><br>&nbsp;<br>- Shows downloads each episode as they air or are available online<br><a href=\"https://notflix.pknw1.co.uk\" class=\"text-primary\">- Self Service Search and Add is available for Shows</a><br><br>- YouTube includes video's from Youtube without Ad's or tracking&nbsp;<br><a href=\"https://youtube.pknw1.co.uk\" class=\"text-primary\">- Self Service Search and Add is available for YouTube media (also removing Ads)</a><br><br>- eBooks and AudioBooks are a selection of educational materials<br>- Self Service search and download for these sections is currently under development&nbsp;</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 2\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        You can search for any movie or show, whether released or not; the service will<br><br>- Add your request and search the internet<br>- Download the best copy for any movie<br>- Download each episode for any show<br>- Download new episodes as they release and improved quality for movies as available</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div id=\"tab4\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 3\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        Here you can manage your password, add an email for updates and create a custom invite link to invite friends or family</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div id=\"tab5\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 4\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        This sends an immediate notification to Administrators so that should you have any issue, you can get a resolution normally within the hour</p>\n                                </div>\n                            </div>\n                        </div>\n                        <div id=\"tab6\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 5\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\">\n                                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                        NEW!&nbsp;<br>Simply enter a youtube link and download - once downloaded any video will be available under the channel name is Jellyfin &gt; Youtube<br><br>You can also install a plugin to your browser to send from Youtube directly for download by installing either a Firefox or Chrome extension - see the <a href=\"https://github.com/arabcoders/ytptube-extension\" class=\"text-primary\" target=\"_blank\">developers page </a>for latest links<br><br>Once installed, simply set the server URL to <a href=\"https://youtube.pknw1.co.uk\" class=\"text-primary\">https://youtube.pknw1.co.uk</a></p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uN4NOsrjH3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "tabs1-4g"
         },
         {
           "_params": {

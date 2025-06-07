@@ -1930,3 +1930,54 @@ a {
 .cid-uJ8KtWVcNU .mbr-card-title {
   color: #ff0000;
 }
+.cid-uNocUney2a {
+  display: flex;
+  background-image: url("../../../assets/images/jellyfin-bg-2000x1125.png");
+}
+.cid-uNocUney2a .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-uNocUney2a {
+    align-items: center;
+  }
+  .cid-uNocUney2a .row {
+    justify-content: center;
+  }
+  .cid-uNocUney2a .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-uNocUney2a .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-uNocUney2a {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-uNocUney2a .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-uNocUney2a .content-wrap {
+    width: 100%;
+  }
+}
+.cid-uNocUney2a .mbr-section-title,
+.cid-uNocUney2a .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-uNocUney2a .mbr-text,
+.cid-uNocUney2a .mbr-section-btn {
+  text-align: center;
+}
+.cid-uNocUney2a .mbr-section-title {
+  color: #ff0000;
+}
+.cid-uNocUney2a .mbr-section-subtitle {
+  color: #ff0000;
+}

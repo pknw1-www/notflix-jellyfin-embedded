@@ -1852,7 +1852,7 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [
             "<script src=\"https://www.google.com/recaptcha/api.js\"></script>",
-            "<script>\n        function recaptchaCallback() {\n  document.getElementById(\"subscribeButton\").disabled = false;\n}\n\n    function Redirect() \n    {  \n        window.location=\"close.html\";     } \n    setTimeout('Redirect()', 15000); \n\n        </script>"
+            "<script>\n        function recaptchaCallback() {\n  document.getElementById(\"subscribeButton\").disabled = false;\n}\n\n    function Redirect() \n    {  \n        window.location=\"https://help.pknw1.co.uk\";     } \n    setTimeout('Redirect()', 30000); \n\n        </script>"
           ],
           "_cid": "uNocUney2a",
           "_anchor": "header17-4m",

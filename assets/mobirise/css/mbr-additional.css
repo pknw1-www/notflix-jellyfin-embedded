@@ -1981,3 +1981,54 @@ a {
 .cid-uNocUney2a .mbr-section-subtitle {
   color: #ff0000;
 }
+.cid-uNojznOX5c {
+  display: flex;
+  background-image: url("../../../assets/images/jellyfin-bg-2000x1125.png");
+}
+.cid-uNojznOX5c .mbr-overlay {
+  background-color: #000000;
+  opacity: 0.5;
+}
+@media (min-width: 768px) {
+  .cid-uNojznOX5c {
+    align-items: center;
+  }
+  .cid-uNojznOX5c .row {
+    justify-content: center;
+  }
+  .cid-uNojznOX5c .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-uNojznOX5c .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-uNojznOX5c {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-uNojznOX5c .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-uNojznOX5c .content-wrap {
+    width: 100%;
+  }
+}
+.cid-uNojznOX5c .mbr-section-title,
+.cid-uNojznOX5c .mbr-section-subtitle {
+  text-align: center;
+}
+.cid-uNojznOX5c .mbr-text,
+.cid-uNojznOX5c .mbr-section-btn {
+  text-align: center;
+}
+.cid-uNojznOX5c .mbr-section-title {
+  color: #ff0000;
+}
+.cid-uNojznOX5c .mbr-section-subtitle {
+  color: #ff0000;
+}

@@ -47,7 +47,7 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "uniqCompNum": 167,
+    "uniqCompNum": 168,
     "versionPublish": "5.9.25",
     "imageResize": true,
     "screenshot": "screenshot.png",
@@ -374,7 +374,7 @@
     "onboarding.html": {
       "settings": {
         "title": "on-boarding",
-        "order": "5",
+        "order": "6",
         "header_custom": "",
         "socialSharingUrl": ""
       },
@@ -1468,7 +1468,7 @@
     "qr.html": {
       "settings": {
         "title": "QR",
-        "order": "7",
+        "order": "8",
         "header_custom": ""
       },
       "components": [
@@ -1542,7 +1542,7 @@
     "onboarding2.html": {
       "settings": {
         "title": "on-boarding 2",
-        "order": "6",
+        "order": "7",
         "header_custom": ""
       },
       "components": [
@@ -1852,10 +1852,93 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [
             "<script src=\"https://www.google.com/recaptcha/api.js\"></script>",
-            "<script>\n        function recaptchaCallback() {\n  document.getElementById(\"subscribeButton\").disabled = false;\n}\n\n    function Redirect() \n    {  \n        window.location=\"qr.html\";     } \n    setTimeout('Redirect()', 15000); \n\n        </script>"
+            "<script>\n        function recaptchaCallback() {\n  document.getElementById(\"subscribeButton\").disabled = false;\n}\n\n    function Redirect() \n    {  \n        window.location=\"close.html\";     } \n    setTimeout('Redirect()', 15000); \n\n        </script>"
           ],
           "_cid": "uNocUney2a",
           "_anchor": "header17-4m",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "close.html": {
+      "settings": {
+        "title": "Close",
+        "meta_descr": "",
+        "header_custom": "<style>\nbody {\nbackground-color: #232323\n}\n\n.modal-body {\nbackground-color: #232323;\ncolor: red;\n}\n</style>",
+        "footer_custom": "",
+        "html_before": "",
+        "order": "5"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              },
+              ".content-wrap": {
+                "padding": "1rem 3rem"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "~\"@{verticalAlign}\"",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "color": "#ff0000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ff0000"
+            }
+          },
+          "_name": "header17",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header16\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"8\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\">Left</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/jellyfin-bg-2000x1125.png\" selected parallax>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\">\n      <input type=\"color\" title=\"Color\" value=\"#232323\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"file:///Users/pknw1/Documents/static/pknw1.co.uk/export/contact.pknw1.co.uk/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n          <b><br>Your request could not be completed</b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>\n          Request a Streaming Account</b></h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Verify you are not a Bot and then click Proceed - You have 30 seconds<br></p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\">\n        \n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling out the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                            Oops...! some problem!\n                        </div>\n                    </div>\n                    <div class=\"dragArea row\">\n                                            <div class=\"modal-body display-7\" id=\"help_body\" style=\" padding-left: 35%;\">\n\n</div>\n[JS_CODE_0]\n        [JS_CODE_1]\n\n        \n                        <div class=\"col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn\">\n                            <button id=\"subscribeButton\" type=\"submit\" value=\"subscribe\" class=\"btn btn-danger display-7 animate__animated animate__delay-1s animate__fadeIn\" disabled=\"disabled\" onclick=\"window.location.href='contact.html';\">Proceed</button><p id=\"result\"></p></div>\n                        </div>\n\n                    </div>\n        \n        </div>\n      </div>\n    </div>\n  \n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script src=\"https://www.google.com/recaptcha/api.js\"></script>",
+            "<script>\n        function recaptchaCallback() {\n  document.getElementById(\"subscribeButton\").disabled = false;\n}\n\n    function Redirect() \n    {  \n        close()    } \n    setTimeout('Redirect()', 5000); \n\n        </script>"
+          ],
+          "_cid": "uNojznOX5c",
+          "_anchor": "header17-4n",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

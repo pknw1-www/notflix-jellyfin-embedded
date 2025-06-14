@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=bry8bM"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=bry8bM" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=N8SJdH"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=N8SJdH" type="text/css">
 
   
   <style>.modal-content {
@@ -43,19 +43,19 @@ color: #ffa600;
     <div class="container">
         <div class="media-container-row d-flex align-items-center">
             <div class="mbr-white col-12 col-lg-6 text-center text-lg-left py-5">
-                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong>User Created!</strong></h1>
+                <h1 class="mbr-section-title pb-2 mbr-fonts-style display-1"><strong><span id="username">User Created!</span></strong></h1>
                 <p class="mbr-text pb-4 mbr-fonts-style wrapper display-4">To get started, you can jump straight to the Web platform, or explore further and download desktop clients, iOS and Android Apps&nbsp;<br><br>Currently accounts are created disabled and require approval before you can login - this usually takes a few minutes&nbsp;<br><br>Updates &amp; Support via <a href="https://whatsapp.com/channel/0029VavN9MNHVvTUPkXfMP1Q" class="text-primary">WhatsApp Channel</a><br><br>Enter&nbsp;<strong><a href="https://notflix.pknw1.co.uk" class="text-primary" target="_blank">https://notflix.pknw1.co.uk</a></strong> if asked for server!<br></p>
                 <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="onboarding.html#mobile-apps">Guide</a> <a class="btn btn-md btn-primary display-4" href="https://help.pknw1.co.uk/help.html">Help</a> <a class="btn btn-md btn-danger-outline display-4" href="https://notflix.pknw1.co.uk" target="_blank">Login</a></div>
             </div>
             <div class="col-8 col-lg-5 mx-auto py-5">
-                <a href="https://jellyfin.pknw1.co.uk" target="_blank"><img src="assets/images/notflix-jellyfin-1256x573.png" class="img-fluid" alt="" title=""></a>
+                <a href="https://notflix.pknw1.co.uk" target="_blank"><img src="assets/images/notflix-jellyfin-1256x573.png" class="img-fluid" alt="" title=""></a>
             </div>
         </div>
     </div>
     
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-35" data-rv-view="1031">
+<section class="mbr-section" id="witsec-modal-window-block-35" data-rv-view="1097">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -261,7 +261,28 @@ var inputText = document.getElementById("inputText").value;
   };
 
 </script>
-  
+  <script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const username = urlParams.get('username');
+
+ function content(divSelector, value) {
+        document.getElementById(divSelector).innerHTML = value;
+
+    }
+
+
+ function retry(divSelector, value) {
+   document.querySelector(divSelector).style.display = 'inline';
+   document.querySelector(divSelector).href = 'https://'+refer;
+  }
+
+
+if (username) {
+    content('username','User '+username+' Created!');
+}
+
+</script>
   <input name="animation" type="hidden">
   </body>
 </html>
